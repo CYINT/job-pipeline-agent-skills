@@ -4,6 +4,10 @@ Reusable OpenCode skills for operating an agent-assisted job-search and lead-tou
 
 These skills are deliberately process-only. They do not include credentials, browser profiles, private contact lists, mailbox exports, resumes, or proprietary candidate data.
 
+## Stewardship
+
+This repository is owned by the CYINT LLC lane. Keep it scoped to reusable OpenCode skill definitions and process documentation; do not place client/job-pipeline records, credentials, resumes, browser artifacts, mailbox exports, or private lead data here.
+
 ## Skills
 
 - `job-pipeline-operator`: designs and operates a bounded job-search pipeline from role discovery through offer acceptance.

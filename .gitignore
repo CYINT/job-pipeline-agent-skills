@@ -1,0 +1,17 @@
+.env
+.env.*
+*.token
+*token*.json
+credentials/
+secrets/
+mailbox/
+exports/
+browser-profiles/
+resumes/
+private/
+*.docx
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.zip

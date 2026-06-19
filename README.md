@@ -15,7 +15,7 @@ This repository is owned by the CYINT LLC lane. Keep it scoped to reusable OpenC
 
 ## Tools
 
-This repository also includes small offline helpers under `tools/`. They classify exports and update local JSONL state, but they do not log into services, send messages, submit applications, or read credentials. See `docs/publishable-job-pipeline-tools.md`.
+This repository also includes small helpers under `tools/`. They classify exports, update local JSONL state, and can perform a read-only LinkedIn message-card export from an already-authenticated browser profile. They do not accept credentials, send messages, submit applications, or auto-apply. See `docs/publishable-job-pipeline-tools.md`.
 
 ## Install
 

@@ -6,6 +6,7 @@ This repository includes only reusable, offline, dry-run tooling for an agent-as
 
 - `tools/classify_inbox_export.py`: classifies a JSON/JSONL mailbox or message export into actionable, admin/onboarding, no-reply evidence, suppress, or review buckets.
 - `tools/classify_message_export.py`: classifies exported recruiter or messaging threads and reports which qualification gates are present or missing.
+- `tools/linkedin_message_export.py`: read-only export of visible LinkedIn messaging cards from an already-authenticated browser profile supplied by the operator.
 - `tools/update_pipeline_state.py`: upserts a JSONL system-of-record row for an opportunity.
 
 ## Not Included
@@ -24,3 +25,12 @@ python tools/update_pipeline_state.py .local/pipeline.jsonl --company ExampleCo 
 ```
 
 The `.local/` directory is ignored and is intended for private local state.
+
+For LinkedIn messaging, export first and classify second:
+
+```powershell
+python tools/linkedin_message_export.py --user-data-dir "$env:LOCALAPPDATA\Playwright\linkedin-profile" --output .local/linkedin-messages.json
+python tools/classify_message_export.py .local/linkedin-messages.json
+```
+
+The LinkedIn exporter is read-only. It does not accept LinkedIn credentials and does not send messages.

@@ -13,6 +13,10 @@ This repository is owned by the CYINT LLC lane. Keep it scoped to reusable OpenC
 - `job-pipeline-operator`: designs and operates a bounded job-search pipeline from role discovery through offer acceptance.
 - `lead-touch-follow-up`: classifies inbound leads and drafts safe, high-signal follow-up without over-messaging.
 
+## Tools
+
+This repository also includes small offline helpers under `tools/`. They classify exports and update local JSONL state, but they do not log into services, send messages, submit applications, or read credentials. See `docs/publishable-job-pipeline-tools.md`.
+
 ## Install
 
 Copy the skill directories into an OpenCode skill path, for example:

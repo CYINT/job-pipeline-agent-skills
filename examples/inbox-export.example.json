@@ -1,0 +1,16 @@
+[
+  {
+    "id": "example-1",
+    "source": "mailbox",
+    "from": "recruiter@example.com",
+    "subject": "Remote AI Engineer role",
+    "snippet": "Can you confirm your target rate and availability for a remote W2 contract?"
+  },
+  {
+    "id": "example-2",
+    "source": "mailbox",
+    "from": "no-reply@example.com",
+    "subject": "Application received",
+    "snippet": "This is an automated email. Please do not reply."
+  }
+]

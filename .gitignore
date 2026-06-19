@@ -9,6 +9,8 @@ exports/
 browser-profiles/
 resumes/
 private/
+.local/
+*.jsonl
 *.docx
 *.pdf
 *.png
